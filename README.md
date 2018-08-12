@@ -20,10 +20,10 @@ Put positive and negative datasets into the directory and rename them as `pos_fi
 Put the testing data into the directory and rename it as `seq2seq.txt`.<br>
 (format of `seq2seq.txt` is the same as `pos_file.txt` and `neg_file.txt`)
 
-2. Training：
+2. Training：<br>
 - run `python main.py -train -attention -model [your_model_name] -data_path [your_dataset_name]`
 
-3. Testing：
+3. Testing：<br>
 - run `python main.py -test  -attention -model [your_model_name] -data_path [your_dataset_name]`
   
 ## Transfer Network based：
@@ -50,11 +50,11 @@ Put the testing data into the root directory and rename it as `seq2seq.txt`.<br>
 (format of `seq2seq.txt` is the same as `pos_file.txt` and `neg_file.txt`)
 
 2. Training：
-- Step 1： Training the variational autoencoder.
+- Step 1： Training the variational autoencoder.<br>
 -- run `python main.py -step1 -model [your_model_name]`
-- Step 2： Training the sentiment classifier.
+- Step 2： Training the sentiment classifier.<br>
 -- run `python main.py -step2 -model [your_model_name]`
-- Step 3： Training the transfer network.
+- Step 3： Training the transfer network.<br>
 -- run `python main.py -step3 -model [your_model_name]`
 
 3. Testing：
