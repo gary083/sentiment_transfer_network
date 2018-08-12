@@ -38,8 +38,8 @@ def test(args):
 
         vocab, rev_vocab = data_utils.initialize_vocab(vocab_path)
 
-        with open('seq2seq', 'r') as fin:
-            with open('neg2pos.txt', 'w') as fout:
+        with open(os.path.join(args.works_dir, 'seq2seq.txt'), 'r') as fin:
+            with open(os.path.join(args.works_dir, 'neg2pos.txt'), 'w') as fout:
                 for l, seq in enumerate(fin):
                     print (('\r%d' %l) ,end='')
                     sentence = seq.strip()
