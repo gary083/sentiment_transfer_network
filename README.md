@@ -13,11 +13,12 @@ Which is based on [Style Transfer from Non-Parallel Text by Cross-Alignment](htt
 1. Prepare dataset：
 - Step 1 : Make a directory for your dataset. <br>
 `mkdir -r data/[your_dataset_name]`
-- Step 2 : Put positive and negative datasets into the directory <br>
-and rename them as `pos_file.txt` and `neg_file.txt` respectively.
+- Step 2 : Prepare training data. <br>
+Put positive and negative datasets into the directory and rename them as `pos_file.txt` and `neg_file.txt` respectively.<br>
 (Every sentences in `pos_file.txt` and `neg_file.txt` are taken apart by `\n`)
-- Step 3 : Put the testing data into the directory <br>
-and rename it as `seq2seq.txt`. (format of `seq2seq.txt` is the as `pos_file.txt` and `neg_file.txt`)
+- Step 3 : Prepare training data. <br>
+Put the testing data into the directory and rename it as `seq2seq.txt`.<br>
+(format of `seq2seq.txt` is the as `pos_file.txt` and `neg_file.txt`)
 
 
 2. Training：
